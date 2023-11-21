@@ -45,3 +45,23 @@ console.log(resultado2);
 //Garantindo que o resultado sejá absoluto (positivo)
 console.log(Math.abs (resultado3)); // Fazendo o resultado ficar com o valor absoluto (vai tirar o sinal de negativo)
 
+
+
+/* Sintaxe arrow function  */
+const exemplo3 = () => {
+    console.log("Arrow Function!")
+};
+
+//fez a função e depois chama ela
+exemplo3();
+
+// const saudacao = (cliente) => {
+//     console.log("Olá " + cliente);
+// };  Feito uma nova versão em baixo
+
+// Omitir os parênteses do parâmetro (SOMENTE QUANDO FOR 1)
+const saudacao = cliente => {
+    console.log("Olá " + cliente);
+}
+saudacao("Aline");
+saudacao("Fulano");
