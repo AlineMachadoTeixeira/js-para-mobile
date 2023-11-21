@@ -1,6 +1,7 @@
 // 02-funcoes.js
 
 // No terminal escreve node 02-funcoes.js(nome da pasta) e entre
+//Limpando terminal cls e entre 
 
 /* Formas tradicionais  */
 
@@ -29,3 +30,18 @@ exemplo2();
 02) Chame está função duas vezes passando valores diferentes e guardando os resultados em variáveis de escopo global.
 
 03) Mostre os valores processados pela funçao no terminal. */
+
+function exercicio(valor1, valor2){
+    return valor1 - valor2;
+};
+
+let resultado1 = exercicio(15, 5);
+let resultado2 = exercicio(20, 10);
+let resultado3 = exercicio(10, 30);
+
+
+console.log(resultado1);
+console.log(resultado2);
+//Garantindo que o resultado sejá absoluto (positivo)
+console.log(Math.abs (resultado3)); // Fazendo o resultado ficar com o valor absoluto (vai tirar o sinal de negativo)
+
