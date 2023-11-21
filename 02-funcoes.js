@@ -21,3 +21,11 @@ function exemplo2(){
 };
 //Não precisa fazer depois de chamar a função pode chamar antes
 exemplo2();
+
+
+/* Exercícios
+01) Crie uma função (qualquer sintaxe) que receba dois valores numérico, calcule a diferença entre eles e retorne o resultado. 
+
+02) Chame está função duas vezes passando valores diferentes e guardando os resultados em variáveis de escopo global.
+
+03) Mostre os valores processados pela funçao no terminal. */
