@@ -12,4 +12,10 @@ Meu nome é Chapolin Colorado, tenho 25 anos e moro atualmmente na cidade de Sã
                                //class='destaque' para usar class no js precisa ser aspas simples ou assim class=\"destaque\"
 let mensagem1 = "Meu nome é <b class='destaque'>"+nome+"</b> "+sobrenome+", tenho "+idade+" anos e moro atualmente na cidade "+cidade+" - "+estado; 
 
-console.log(mensagem1)
+console.log(mensagem1);
+
+/* Templete Literal/String  */
+let mensagem2 = `Meu nome é ${nome} ${sobrenome}, tenho ${idade} anos e moro atualmente na cidade ${cidade} - ${estado}.`;
+
+console.log(mensagem2);
+
