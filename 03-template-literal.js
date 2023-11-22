@@ -14,8 +14,11 @@ let mensagem1 = "Meu nome é <b class='destaque'>"+nome+"</b> "+sobrenome+", ten
 
 console.log(mensagem1);
 
-/* Templete Literal/String  */
-let mensagem2 = `Meu nome é ${nome} ${sobrenome}, tenho ${idade} anos e moro atualmente na cidade ${cidade} - ${estado}.`;
+/* Templete Literal/String  usando crases */ 
+
+//toUpperCase deixar letras maiuscula   
+//${ idade >= 18 ? 'maior' : 'menor'} de idade`; o sinal é ?(se) :(ou) tipo o if(){}else(){}
+let mensagem2 = `Meu nome é ${nome.toUpperCase()} ${sobrenome}, tenho ${idade} anos e moro atualmente na cidade ${cidade} - ${estado}. Sou ${ idade >= 18 ? 'maior' : 'menor'} de idade`;
 
 console.log(mensagem2);
 

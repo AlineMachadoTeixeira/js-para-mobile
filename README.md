@@ -30,3 +30,8 @@
  Nas bibliotecas e fremeworks as sintaxes mais comuns são Arrow Function e Nomeada.
 
  **Obs.:** caso utilize as sintaxes anônima ou arrow, certifique-se **primeiro** declarar a função para só depois chama-la.
+
+
+### Templete Literal/String
+
+Forma mais moderna de manipular dados estáticos e dinâmicos, além de permitir de uma forma mais facil executar operações dentro de string/códigos. Lembre-se de usi das **crases** e bloco `${}` para execuções de código dinâmico (Variáveis, constantes, funções etc).
