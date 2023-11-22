@@ -35,3 +35,9 @@
 ### Templete Literal/String
 
 Forma mais moderna de manipular dados estáticos e dinâmicos, além de permitir de uma forma mais facil executar operações dentro de string/códigos. Lembre-se de usi das **crases** e bloco `${}` para execuções de código dinâmico (Variáveis, constantes, funções etc).
+
+
+##### Criando package.json
+Para fazer o que está na pasta modulos arquivo dados.js aparecer em outro arquivo no caso 04-codigo-modular.js
+-crie a pasta e coloque o nome package.json
+-na pasta escreve o que está no arquivo package.json "type": "module"
