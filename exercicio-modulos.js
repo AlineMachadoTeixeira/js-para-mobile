@@ -4,3 +4,4 @@ for (const mes of meses){
     console.log(mes);
 };
 
+
