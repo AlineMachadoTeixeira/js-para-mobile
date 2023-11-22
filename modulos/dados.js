@@ -1,10 +1,11 @@
+//objeto
 const pessoa = {
     nome: 'Jon Oliva',
     idade: 66,
     cidade:'São Paulo'
 };
 
-
+//objeto
 const livro ={
     titulo: "O Senhor dos Anéis ",
     volume: "As Duas Torres",
