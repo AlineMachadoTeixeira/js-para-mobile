@@ -41,3 +41,13 @@ Forma mais moderna de manipular dados estáticos e dinâmicos, além de permitir
 Para fazer o que está na pasta modulos arquivo dados.js aparecer em outro arquivo no caso 04-codigo-modular.js
 -crie a pasta e coloque o nome package.json
 -na pasta escreve o que está no arquivo package.json "type": "module"
+
+
+### Módulos 
+
+São uma maneira de separar lógica/funcionalidade/dados em arquivos dedicados. Ao criar módulos é necessario utilizar os comandos `export` (no módulo a ser exportado) e `import` (no arquivo em que você quer usar o módulo).
+
+Ao exportar apenas **um recurso**, utiliza-se `export default nomeDoRecurso`. Ao exportar **um ou mais** recursos, utiliza-se 
+`export {recuso1, recuso2, recusoN}`. 
+
+Ao importar apenas **um recurso**, utiliza-se `import nomeDoRecurso from "./local/nomeDoModulo"`. Ao importar **um ou mais** recursos, utiliza-se `import {recuso1, recuso2, recusoN} from "./local/nomeDoModulo"`.

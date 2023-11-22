@@ -2,3 +2,6 @@ const meses = ["Janeiro", "Fevereiro", "Março", "Abril", "Maior", "Junho", "Jul
 
 
 export { meses };
+
+
+ //foi para o arquivo exercicio-modulos.js

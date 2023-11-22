@@ -1,5 +1,5 @@
 const pessoa = {
-    nome: 'Jon oLiva',
+    nome: 'Jon Oliva',
     idade: 66,
     cidade:'São Paulo'
 };
@@ -20,3 +20,6 @@ const alunos = ["Tanaka", "Victor", "Eliel", "Aline"]
 
 /* Se for exportação de VÁRIOS recursos use somente export {entre chaves os recursos} tire o  default */
 export  { pessoa, livro, alunos };
+
+
+ //foi para o arquivo 04-modular
