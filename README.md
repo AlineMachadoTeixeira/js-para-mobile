@@ -18,3 +18,15 @@
  `var` possui escopo **Global** mesmo quando declarado dentro de blocos. Portanto, é acessivel em praticamente qualquer lugar dentro da aplicação.
 
  `const` obrigatoriamente precisa ser inicializada com algum valor/expressão, e este valor/expressão **não pode ser modificado**.
+
+ ### Funções 
+
+ Blocos de código reaproveitáveis que podem ser criados de pelo menos 3 formas:
+
+ - Função nomeada/declarada
+ - Função anônima 
+ - Arrow Function
+
+ Nas bibliotecas e fremeworks as sintaxes mais comuns são Arrow Function e Nomeada.
+
+ **Obs.:** caso utilize as sintaxes anônima ou arrow, certifique-se **primeiro** declarar a função para só depois chama-la.
