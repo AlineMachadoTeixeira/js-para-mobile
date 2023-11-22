@@ -11,9 +11,12 @@ const livro ={
     ano: 1954
 };
 
+//Array
+const alunos = ["Tanaka", "Victor", "Eliel", "Aline"]
+
 /* Se for exportação  de somente UM recurso usamos  export default nomeDoRecurso*/
 //export default pessoa; quando só tem uma const
 
 
 /* Se for exportação de VÁRIOS recursos use somente export {entre chaves os recursos} tire o  default */
-export  { pessoa, livro };
+export  { pessoa, livro, alunos };
