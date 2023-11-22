@@ -10,6 +10,11 @@ console.log(reprovados); // usando o módulo alunos através de apelido
 
 console.log(alunos); // usando o nome original do módulo
 
+import { 
+    converteMaiusculas, 
+    converteMinusculas,
+    formataMoeda
+} from "./modulos/funcoes.js";
 
 
 //import pessoa from "./modulos/dados.js"; --> assim quando só tem um const no arquivo dados.js
@@ -24,3 +29,14 @@ for (const prop in pessoa){
     console.log(pessoa[prop]);
 }
 
+
+console.log(converteMaiusculas(reprovados[0]));
+console.log(converteMinusculas(alunos[0]));
+
+let preco1 = 1200.88;
+let preco2 = 1000000.75;
+let preco3 = 500.8452;
+
+console.log(formataMoeda(preco1));
+console.log(formataMoeda(preco2));
+console.log(formataMoeda(preco3));
