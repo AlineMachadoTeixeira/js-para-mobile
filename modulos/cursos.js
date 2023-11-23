@@ -53,3 +53,6 @@ const cursos = [
  
 //export default pois só tem um função
 export default cursos
+
+
+//foi para o arquivo 08-map.js
