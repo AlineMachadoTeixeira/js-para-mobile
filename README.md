@@ -51,3 +51,9 @@ Ao exportar apenas **um recurso**, utiliza-se `export default nomeDoRecurso`. Ao
 `export {recuso1, recuso2, recusoN}`. 
 
 Ao importar apenas **um recurso**, utiliza-se `import nomeDoRecurso from "./local/nomeDoModulo"`. Ao importar **um ou mais** recursos, utiliza-se `import {recuso1, recuso2, recusoN} from "./local/nomeDoModulo"`.
+
+
+### Operadores spread e rest ...
+
+- ...spread (espalhar): usado para dividir elementos de um array ou propriedade de um objeto para outro array/objeto. Útil para gerar novas estruturas de dados a partir de estruturas existente.
+- ...rest (coletar/extrair valores): usado para gerar uma lista de parâmetros para uma função a partir dos valores de um array. Útil para evitar a necessidade de criar parâmetros manualmente em uma função, ou para quando não sambemos quantos parâmetros serão necessários. 
