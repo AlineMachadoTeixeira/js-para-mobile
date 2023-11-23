@@ -33,4 +33,37 @@ console.log(newton);
 
 console.log("----------------");
 
+//função dentro de um array 
+// const recursos = [
+//     ["Notebook", "TV Led", "Computador Desktop"],   
+//     function(texto){
+//         return texto.toUpperCase();
+//     }
+// ];
 
+
+// o de cima com Arrow Function
+const recursos = [
+    ["Notebook", "TV Led", "Computador Desktop"],   
+    texto =>  texto.toUpperCase()
+    
+];
+
+console.log("----------------");
+
+console.log(recursos); //Array completo
+
+// Destructuring o de cima produtos é os note, tv e etc  converter é a função
+const [produtos, converter] = recursos;
+
+//Acessando através da constante que foi gerada pelo Destructuring
+console.log(produtos[1]) // TV Lead
+
+
+for(const produto of produtos){
+    console.log("Produto: "+produto);
+};
+
+console.log( converter("tiago"));
+console.log( converter("GelaDeira"));
+console.log( converter(produtos[1]));
