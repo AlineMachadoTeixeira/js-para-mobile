@@ -29,7 +29,18 @@ opção 1: valor - valor * 0.10
 opção 2: valor *0.9 */
 
 const precos = cursos.map( curso => curso.preco - curso.preco * 0.10); 
-console.log(precos); 
+console.log(precos);   
+
+// outra forma de fazer mais detalhada 
+const blackFriday = cursos.map(
+    curso => {
+        let desconto = curso.preco * 0.10;
+        let precoFinal = Math.abs(desconto - curso.preco);
+        return ["Preço: R$"+curso.preco+",00", "Desconto: R$"+desconto+",00", "Preço com deconto: R$"+precoFinal+",00"]
+    }
+);
+
+console.log(blackFriday);
 
 console.log("----------------------");
 
