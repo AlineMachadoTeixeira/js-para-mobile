@@ -67,3 +67,47 @@ for(const produto of produtos){
 console.log( converter("tiago"));
 console.log( converter("GelaDeira"));
 console.log( converter(produtos[1]));
+
+
+console.log("----------------");
+
+// Destructuring em objetos
+const pessoa = {
+    nome: "Andre",
+    idade: 19,
+    bairro: "Penha",
+    situacao: "crítica"
+};
+
+const{ nome, idade, bairro, situacao} = pessoa; 
+
+console.log(`O aluno ${nome} está em situação ${situacao} no curso.`);
+console.log(`Mora na ${bairro} e mesmo assim sempre atrasa... :(`);
+
+//Criando um apelido para a propriedade codigo --> codigo:pedido
+const {codigo:pedido, cursos, preco} = {codigo:"123abc", cursos: ["figma", "Node.js"], preco:1000}
+
+console.log(pedido); // pedido é um  apelido
+console.log(cursos);
+console.log(preco);
+
+
+
+//Destructuring para o parâmetros de função
+
+function exibirDados(objeto){
+    console.log(`Filme: ${objeto.titulo} - Ano de lançamento: ${objeto.ano}`)
+};
+
+const filme1 = {
+    titulo: "Vigadores",
+    ano:2012
+};
+
+const filme2 = {
+    titulo: "Barbie",
+    ano:2023
+};
+
+exibirDados(filme1);
+exibirDados(filme2);
