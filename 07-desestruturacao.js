@@ -95,8 +95,27 @@ console.log(preco);
 
 //Destructuring para o parâmetros de função
 
-function exibirDados(objeto){
-    console.log(`Filme: ${objeto.titulo} - Ano de lançamento: ${objeto.ano}`)
+// function exibirDados(objeto){
+//     console.log(`Filme: ${objeto.titulo} - Ano de lançamento: ${objeto.ano}`)
+// };
+
+// const filme1 = {
+//     titulo: "Vigadores",
+//     ano:2012
+// };
+
+// const filme2 = {
+//     titulo: "Barbie",
+//     ano:2023
+// };
+
+// exibirDados(filme1);
+// exibirDados(filme2);
+
+// Fazer o de cima com   Destructuring
+
+function exibirDados({titulo, ano}){
+    console.log(`Filme: ${titulo} - Ano de lançamento: ${ano}`)
 };
 
 const filme1 = {
@@ -111,3 +130,4 @@ const filme2 = {
 
 exibirDados(filme1);
 exibirDados(filme2);
+
