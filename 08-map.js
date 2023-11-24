@@ -79,12 +79,12 @@ const cursosBlackFriday1 = cursos.map(
 );
 console.log(cursosBlackFriday1);
 
-// 2º Simplificado com arrow function
+// 2º Simplificando com arrow function
 /* Nesse envolver o código de return implícito com parê ntes */
-const cursosBlackFriday1Simplificado = cursos.map( curso => 
+const cursosBlackFriday1Simplificando = cursos.map( curso => 
     ({...curso, preco: curso.preco - curso.preco * 0.10}) 
 );
-console.log(cursosBlackFriday1Simplificado);
+console.log(cursosBlackFriday1Simplificando);
 
 // 3º
 const cursosBlackFriday2 = cursos.map(
