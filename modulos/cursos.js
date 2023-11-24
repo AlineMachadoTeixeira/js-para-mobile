@@ -55,4 +55,4 @@ const cursos = [
 export default cursos
 
 
-//foi para o arquivo 08-map.js
+//foi para o arquivo 08-map.js e para 09-filter.js
