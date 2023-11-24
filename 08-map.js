@@ -46,12 +46,15 @@ console.log("----------------------");
 
 
 
+/* DESAFIO do exercicio!
+Gere um novo array de cursos contendo todos os dados anteriores e os preços novos com desconto. */
 const cursosLista = cursos.map( curso =>  {    
 
     let desconto = curso.preco * 0.10;
     let precoFinal = Math.abs(desconto - curso.preco);
 
-    return ["id: " + curso.id + ", titulo: " + curso.titulo + ", categoria: " +curso.categoria + "preço: " +precoFinal ]
+    return ["id: " + curso.id + ", titulo: " + curso.titulo + ", categoria: " +curso.categoria + "preço: " +precoFinal ];   
+  
 }
 );
 console.log(cursosLista);
@@ -59,7 +62,44 @@ console.log(cursosLista);
 console.log("----------------------");
 
 
-const cursoBlackFriday = cursos.map( curso => {
+//  DESAFIO outras versões 1º
+const cursosBlackFriday = cursos.map( curso => {
     return {...curso, preco: curso.preco - curso.preco * 0.10}
 });
+console.log(cursosBlackFriday);
 
+
+// 2º
+const cursosBlackFriday1 = cursos.map(
+    ({id, titulo, categoria, preco}) => {
+        let desconto = preco * 0.10;
+        let precoFinal = Math.abs(desconto - preco);
+        return {id,titulo,categoria,preco: precoFinal}
+    }
+);
+console.log(cursosBlackFriday1);
+
+// 3º
+const cursosBlackFriday2 = cursos.map(
+    curso => {
+        return{
+            ...curso,
+            preco: curso.preco * 0.9
+        }
+        
+    }
+);
+console.log(cursosBlackFriday2);
+
+// 4º
+const cursosBlackFriday3 = cursos.map(curso => {
+    let id = curso.id
+    let titulo = curso.titulo
+    let categoria = curso.categoria;
+    let preco = curso.preco - curso.preco * 0.10
+    return {
+        id: id, titulo: titulo, categoria: categoria, preco: preco
+    }
+}
+); 
+console.log(cursosBlackFriday3);   
