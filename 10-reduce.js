@@ -35,14 +35,6 @@ console.log(acumuladora2);
 console.log("------------------");
 
 
-
-// const valores = [10, 5, 50, 200, 1000];
-// const total = valores.reduce( (acumulador, valor) => {
-//     return acumulador + valor
-// }, 0 );
-// console.log(valores);
-// console.log(total);
-
 /* Exercicio: faça a soma dos preços de todos os cursos  */
 
 const preco = cursos.reduce( (acumulador, curso) => {
@@ -53,10 +45,8 @@ console.log(preco);
 
 
 /* Desafio: faça a soma dos preços  dos cursos de front e back end */
-
-
 const cursosDesafio1 = cursos
                                .filter(curso => curso.categoria == "Front-End" || curso.categoria == "Back-End" )
-                               .reduce( (acumulador, curso) => {return acumulador + curso.preco }, 0 );  
+                               .reduce( (acumulador, curso) => { return acumulador + curso.preco }, 0 );  
 
 console.log(cursosDesafio1);                         
