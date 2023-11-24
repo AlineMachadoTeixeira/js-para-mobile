@@ -10,7 +10,19 @@ console.log(valores);
 console.log(total);
 
 // Sem reduce 
-let acumuladora = 0;
-for(  ){
-
+let acumuladora1 = 0;
+for( let i = 0; i < valores.length; i++ ){
+    acumuladora1 = acumuladora1 + valores[i];
 };
+
+console.log(acumuladora1);
+
+// Sem reduce e com for/of
+let acumuladora2 = 0;
+for( let valor of valores ){
+    acumuladora2 = acumuladora2 + valor;
+};
+
+console.log(acumuladora2);
+
+console.log("------------------");
