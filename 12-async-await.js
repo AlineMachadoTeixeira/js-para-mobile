@@ -22,3 +22,5 @@ async function acessaAPI(){
 }
 acessaAPI();
 
+
+
