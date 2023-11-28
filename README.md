@@ -75,3 +75,6 @@ Percorre os elementos do array e executa algum tipo de transformação, gerando 
 Percorre os elementos do array realizando operações (soma, multiplicação, concatenação etc), gerando um único resultado. 
 
 
+
+#### Passo a passo para o  arquivo 11
+Entre no site ``{JSON} Placeholder``  https://jsonplaceholder.typicode.com/ pega  /todos	200  ou   /users	10 users  (usamos o users)  e copie o endereço do link usando o botão direito do mouse e colar no arquivo 11  const api_url = `https://jsonplaceholder.typicode.com/users`; 
