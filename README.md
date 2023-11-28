@@ -76,7 +76,11 @@ Percorre os elementos do array realizando operações (soma, multiplicação, co
 
 
 
+### Comunicação assíncrona 
 
+No JavaScript moderno utilizamos para comunicação assíncrona com APIs REST o comando `fetch`.
 
-#### Passo a passo para o  arquivo 11 e 12
+Você pode usar o `fetch` como **Promises** (recursos assíncronos) encadeados com as dunções `then` e `catch` (para tratamento de erros genéricos), ou usando a sintaxe `async/await` através de funções
+
+ **Passo a passo para o  arquivo 11 e 12**
 Entre no site ``{JSON} Placeholder``  https://jsonplaceholder.typicode.com/ pega  /todos	200  ou   /users	10 users  (usamos o users)  e copie o endereço do link usando o botão direito do mouse e colar no arquivo 11  const api_url = `https://jsonplaceholder.typicode.com/users`; 
