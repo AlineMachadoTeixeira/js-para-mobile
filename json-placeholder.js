@@ -24,6 +24,8 @@ async function acessaAPI() {
         } )
 
 
+         /* Versão ajuda valeska  */
+
         // let tabela = document.querySelector("#usuario")
         // tabela.innerHTML = `${usuarios.map(usuario => `<tr>
         //     <td > ${usuario.name} </td>
@@ -36,6 +38,8 @@ async function acessaAPI() {
         //     tabela.innerHTML = usuario.name
         // };
 
+
+         /* Minha versão não funcionou  */
         // for(const usuario of usuarios){
         //     //console.log(usuario.email);
         // };
