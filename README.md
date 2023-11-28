@@ -76,5 +76,7 @@ Percorre os elementos do array realizando operações (soma, multiplicação, co
 
 
 
-#### Passo a passo para o  arquivo 11
+
+
+#### Passo a passo para o  arquivo 11 e 12
 Entre no site ``{JSON} Placeholder``  https://jsonplaceholder.typicode.com/ pega  /todos	200  ou   /users	10 users  (usamos o users)  e copie o endereço do link usando o botão direito do mouse e colar no arquivo 11  const api_url = `https://jsonplaceholder.typicode.com/users`; 
