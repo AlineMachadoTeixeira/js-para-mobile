@@ -25,4 +25,44 @@ botao.addEventListener("click", async function(){
     } catch (error) {
         console.error(error.message);
     }
+
+
+    // COM MAP 
+    // if(divUsuarios.innerHTML == ""){
+    //     dados.map( usuario => {
+    //         let secao = document.createElement("section");
+    //         secao.innerHTML = `
+    //             <h2>${usuario.name}</h2>
+    //             <p>${usuario.email}</p>
+    //             <p>${usuario.website}</p>
+    //             <hr>
+    //         `;
+    //         divUsuarios.appendChild(secao);
+    //     } );            
+    // }
+
+
+    // COM desestruturacao   e  filter 
+
+    // if(divUsuarios.innerHTML == ""){
+    //     dados
+    //         .filter( usuario => usuario.name.startsWith("C") )
+    //         .map( ({name, email, website}) => {
+    //             let secao = document.createElement("section");
+    //             secao.innerHTML = `
+    //                 <h2>${name}</h2>
+    //                 <p>${email}</p>
+    //                 <p>${website}</p>
+    //                 <hr>
+    //             `;
+    //             divUsuarios.appendChild(secao);
+    //     } );            
+    // }
+
+
+
+
+
+
+
 });
