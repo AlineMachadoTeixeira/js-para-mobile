@@ -4,27 +4,35 @@
 // const apiUrl = `https://jsonplaceholder.typicode.com/users`; // pega tudo
 const apiUrl = `https://jsonplaceholder.typicode.com/users/3`; //para pegar o usuario 3
 
-// Conecte/Acesse...
-fetch(apiUrl)
+function acessaAPI(){
 
-//... e então capture a resposta do api no formato JSON 
-.then(resposta  => {
+    // Conecte/Acesse...
+    fetch(apiUrl)
 
-    /* Se a resposta da requisição não for bem-sucedida(por exemplo, se não houver registros, ou se der erro na próprio server [500]) */
-    if(!resposta.ok){
-        throw new Error(
-            `Erro na requisição: ${resposta.status} - ${resposta.statusText}`
-        )
-    }
+    //... e então capture a resposta do api no formato JSON 
+    .then(resposta  => {
 
-    return resposta.json();
-   
-})
+        /* Se a resposta da requisição não for bem-sucedida(por exemplo, se não houver registros, ou se der erro na próprio server [500]) */
+        if(!resposta.ok){
+            throw new Error(
+                `Erro na requisição: ${resposta.status} - ${resposta.statusText}`
+            )
+        }
 
-//... e então capture os dados contidos na resposta 
-.then( dados => console.log(dados)) // vai puxar os dados do api que pegamos na linha 4
+        return resposta.json();
+    
+    })
 
-// Em caso de erro (de rede, acesso, no json), capture o erro
-.catch(error => {
-    console.error("Erro na operação: "+error.message)
-});
+    //... e então capture os dados contidos na resposta 
+    .then( dados => console.log(dados)) // vai puxar os dados do api que pegamos na linha 4
+
+    // Em caso de erro (de rede, acesso, no json), capture o erro
+    .catch(error => {
+        console.error("Erro na operação: "+error.message)
+    });
+
+}
+
+//chamando a função
+
+acessaAPI();
