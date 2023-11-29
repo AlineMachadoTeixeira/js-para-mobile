@@ -1,5 +1,5 @@
 const botao = document.querySelector("#carregar");
-const divUsuarios = document.querySelector("#lista-de-usuarios");
+const divUsuarios = document.getElementById("lista-de-usuarios");
 
 botao.addEventListener("click", async function(){
     try {
